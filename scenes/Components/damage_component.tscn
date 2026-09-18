@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bqfrxlgr22kva"]
+
+[ext_resource type="Script" uid="uid://c24l6ys0cyytg" path="res://scenes/Components/damage_component.gd" id="1_pmh0l"]
+
+[node name="DamageComponent" type="Node2D" unique_id=659470848]
+script = ExtResource("1_pmh0l")
+max_damage = 3
