@@ -4,4 +4,3 @@
 
 [node name="DamageComponent" type="Node2D" unique_id=659470848]
 script = ExtResource("1_pmh0l")
-max_damage = 3
