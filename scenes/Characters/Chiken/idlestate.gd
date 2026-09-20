@@ -4,14 +4,15 @@ extends Node
 @export var animation_sprite_2d:AnimatedSprite2D
 @export var idle_state_timer: float=5.0
 
-@onready var idle_state_timeer: Timer
+@onready var idle_state_timeer: Timer.new
 
 var idle_state_timeout: bool = false
 
 func _ready() -> void:
-	idle_state_timer.wait_time=idle_state_time_interval
-	idle_state_timer.timeout.connect(on idle state_timeout)
-	add_child(idle_state_timer)
+	
+	idle_state_timer.wait_time=idle_state_time_intervalidle_state_timer.timeout.connect(on_idle_state_timeout)
+	add_child(idle_state_timer) 
+
 
 func _on_process(_delta : float) -> void:
 	pass
@@ -26,7 +27,7 @@ func _on_next_transitions() -> void:
 		transition.emit("walk")
 
 func _on_enter() -> void:
-	animation_sprite_2d.play("idle")
+	animation_sprite_2d.play("walk")
 
 
 	idle_state_timeout = false
@@ -34,5 +35,5 @@ func _on_enter() -> void:
 func _on_exit() -> void:
 	animation_sprite_2d.stop()
 	idle_state_timer.stop()
-func on_idle_state_timeout()  -> void
+func on_idle_state_timeout()  -> void:
 	idle_state_timeout = true

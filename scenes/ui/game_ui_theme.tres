@@ -1,0 +1,15 @@
+[gd_resource type="Theme" format=3 uid="uid://bgf637jcve2x6"]
+
+[ext_resource type="Texture2D" uid="uid://dgy2cpc6reqck" path="res://assets/ui/basic ui sprite.png" id="1_nhbk8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uun4f"]
+atlas = ExtResource("1_nhbk8")
+region = Rect2(201, 105, 30, 30)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p3bpn"]
+texture = SubResource("AtlasTexture_uun4f")
+region_rect = Rect2(3, 3, 25, 23)
+
+[resource]
+darkwoodpanel/base_type = &"PanelContainer"
+darkwoodpanel/styles/panel = SubResource("StyleBoxTexture_p3bpn")
