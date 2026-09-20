@@ -4,6 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://3w3ilxnqiqmv" path="res://scenes/Characters/Player/player.tscn" id="2_1e5t0"]
 [ext_resource type="PackedScene" uid="uid://chqgadj1hto4l" path="res://scenes/Characters/Chiken/chiken.tscn" id="3_1e5t0"]
 
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_cpdn7"]
+vertices = PackedVector2Array(169.86719, 220.54688, 109.74219, 277.46875, 44.023438, 219.86719, 103.328125, 166.17969)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(103, 153, 29, 220, 110, 291, 185, 220)])
+
 [node name="testscenenpcchiken" type="Node2D" unique_id=1098721936]
 y_sort_enabled = true
 
@@ -37,5 +42,19 @@ y_sort_enabled = true
 tile_map_data = PackedByteArray("AAAMAAkAAQAAAAAABgAJAAwAAQAAAAAABgADAAwAAQAAAAAABgA=")
 tile_set = ExtResource("1_bhuwi")
 
-[node name="Chiken" parent="GameTilemap" unique_id=929274418 instance=ExtResource("3_1e5t0")]
+[node name="chickens" type="Node2D" parent="." unique_id=723615944]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="chickens" unique_id=676762050]
+navigation_polygon = SubResource("NavigationPolygon_cpdn7")
+
+[node name="Chiken" parent="chickens" unique_id=929274418 instance=ExtResource("3_1e5t0")]
 position = Vector2(81, 224)
+
+[node name="Chiken2" parent="chickens" unique_id=934306879 instance=ExtResource("3_1e5t0")]
+position = Vector2(111, 222)
+
+[node name="Chiken3" parent="chickens" unique_id=96036024 instance=ExtResource("3_1e5t0")]
+position = Vector2(115, 248)
+
+[node name="Chiken4" parent="chickens" unique_id=192762632 instance=ExtResource("3_1e5t0")]
+position = Vector2(106, 195)
