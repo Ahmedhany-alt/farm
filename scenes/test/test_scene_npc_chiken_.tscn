@@ -45,6 +45,7 @@ tile_set = ExtResource("1_bhuwi")
 [node name="chickens" type="Node2D" parent="." unique_id=723615944]
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="chickens" unique_id=676762050]
+position = Vector2(1, -1)
 navigation_polygon = SubResource("NavigationPolygon_cpdn7")
 
 [node name="Chiken" parent="chickens" unique_id=929274418 instance=ExtResource("3_1e5t0")]
