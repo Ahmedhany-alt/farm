@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cjba1grw0546f"]
+
+[ext_resource type="Texture2D" uid="uid://bq5o7glp0jl33" path="res://assets/game/Objects/Basic_tools_and_meterials.png" id="1_wj50c"]
+[ext_resource type="Script" uid="uid://b6nff75l3l6y7" path="res://scenes/Components/collectable_component.gd" id="2_12fgh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ehnj6"]
+radius = 6.3245554
+
+[node name="wood" type="Sprite2D" unique_id=747911461]
+texture = ExtResource("1_wj50c")
+hframes = 3
+vframes = 2
+frame = 4
+
+[node name="CollectableComponent" type="Area2D" parent="." unique_id=1269843893]
+script = ExtResource("2_12fgh")
+collectable_name = "wood"
+metadata/_custom_type_script = "uid://b6nff75l3l6y7"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1243057257]
+y_sort_enabled = true
+shape = SubResource("CircleShape2D_ehnj6")

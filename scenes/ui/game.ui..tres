@@ -1,0 +1,29 @@
+[gd_resource type="Theme" format=3 uid="uid://ccqvrewrr4flp"]
+
+[ext_resource type="Texture2D" uid="uid://dgy2cpc6reqck" path="res://assets/ui/basic ui sprite.png" id="1_ftlov"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p3bpn"]
+texture = ExtResource("1_ftlov")
+region_rect = Rect2(157, 109, 23, 22)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t0070"]
+texture = ExtResource("1_ftlov")
+region_rect = Rect2(204, 108, 24, 23)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uun4f"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ftlov"]
+texture = ExtResource("1_ftlov")
+region_rect = Rect2(504, 132, 35, 16)
+
+[resource]
+Darkwood/base_type = &"PanelContainer"
+Darkwood/styles/panel = SubResource("StyleBoxTexture_p3bpn")
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_left = 10
+MarginContainer/constants/margin_right = 10
+MarginContainer/constants/margin_top = 10
+Toolbutton/base_type = &"PanelContainer"
+Toolbutton/styles/hover_pressed = SubResource("StyleBoxTexture_t0070")
+Toolbutton/styles/normal = SubResource("StyleBoxTexture_uun4f")
+Toolbutton/styles/panel = SubResource("StyleBoxTexture_ftlov")

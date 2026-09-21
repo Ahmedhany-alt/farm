@@ -1,13 +1,11 @@
 extends Sprite2D
 
-@onready var hurt_component: HurtComponent = $HurtComponent
 @onready var damage_component: DamageComponent= $DamageComponent
 
 var log_scene = preload("res://scenes/objects/trees/log.tscn")
 
 
 func _ready() -> void:
-	hurt_component.hurt.connect(on_hurt)
 	damage_component.max_damage_reached.connect(on_max_damage_reached)
 	
 func on_hurt(hit_damage: int) -> void:

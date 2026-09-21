@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://du2uhs82o8bgj"]
+
+[ext_resource type="Texture2D" uid="uid://e72eoeadatbn" path="res://assets/game/Objects/Basic Plants.png" id="1_6y3kd"]
+[ext_resource type="PackedScene" uid="uid://duor33tnbynmb" path="res://scenes/Components/hurtcomponent.tscn" id="2_60dkp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p3bpn"]
+radius = 7.0
+height = 14.0
+
+[sub_resource type="Curve" id="Curve_pe3jb"]
+_limits = [-360.0, 360.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_uun4f"]
+curve = SubResource("Curve_pe3jb")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_p3bpn"]
+particle_flag_disable_z = true
+angle_min = -179.99998
+angle_max = 180.00002
+angular_velocity_min = -300.0
+angular_velocity_max = -300.0
+angular_velocity_curve = SubResource("CurveTexture_uun4f")
+gravity = Vector3(0, -10, 0)
+linear_accel_min = -10.000002
+linear_accel_max = 29.999996
+radial_accel_min = -12.000002
+radial_accel_max = -12.000002
+tangential_accel_min = -1.0000023
+tangential_accel_max = -1.0000023
+damping_min = 1.0
+damping_max = 10.0
+color = Color(0.9372549, 0.89411765, 0.88235295, 1)
+
+[node name="Corn" type="Node2D" unique_id=1149258008]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=302510576]
+position = Vector2(0, -6.5)
+scale = Vector2(1, 1.8125)
+texture = ExtResource("1_6y3kd")
+hframes = 6
+vframes = 2
+frame = 1
+
+[node name="HurtComponent" parent="." unique_id=1564781619 instance=ExtResource("2_60dkp")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtComponent" unique_id=832583689]
+shape = SubResource("CapsuleShape2D_p3bpn")
+
+[node name="Wateringparticules" type="GPUParticles2D" parent="." unique_id=866255046]
+process_material = SubResource("ParticleProcessMaterial_p3bpn")
