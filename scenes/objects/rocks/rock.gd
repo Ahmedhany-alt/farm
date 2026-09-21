@@ -7,7 +7,7 @@ var stone_scene = preload("res://scenes/objects/rocks/stone.tscn")
 
 
 func _ready() -> void:
-	hurt_component.hurt.connect(on_hurt)
+	hurt_component.on_hurt.connect(on_hurt)
 	damage_component.max_damage_reached.connect(on_max_damage_reached)
 	
 func on_hurt(hit_damage: int) -> void:
