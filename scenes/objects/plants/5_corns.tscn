@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://djlcelbwralgn"]
+
+[ext_resource type="Texture2D" uid="uid://e72eoeadatbn" path="res://assets/game/Objects/Basic Plants.png" id="1_6vvj6"]
+[ext_resource type="Script" uid="uid://b6nff75l3l6y7" path="res://scenes/Components/collectable_component.gd" id="2_82hnc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p3bpn"]
+radius = 7.0
+
+[node name="5corns" type="Sprite2D" unique_id=318878077]
+texture = ExtResource("1_6vvj6")
+hframes = 6
+vframes = 2
+frame = 3
+
+[node name="CollectableComponent" type="Area2D" parent="." unique_id=754628624]
+script = ExtResource("2_82hnc")
+collectable_name = "5corns"
+metadata/_custom_type_script = "uid://b6nff75l3l6y7"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent" unique_id=1289795136]
+shape = SubResource("CircleShape2D_p3bpn")

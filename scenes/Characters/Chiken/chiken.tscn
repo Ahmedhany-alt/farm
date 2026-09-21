@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://chqgadj1hto4l"]
 
 [ext_resource type="Texture2D" uid="uid://bqb1a7tdf15t5" path="res://assets/game/Characters/Free Chicken Sprites.png" id="1_dvdmw"]
-[ext_resource type="Script" uid="uid://7l16m5oxdqo8" path="res://scenes/Characters/Chiken/chiken.gd" id="1_p53ii"]
 [ext_resource type="Script" uid="uid://cfekx31v4p3vl" path="res://scripts/state machine/node_state_machine.gd" id="2_y4rpw"]
 [ext_resource type="Script" uid="uid://bkijyvvxvdjd6" path="res://scenes/Characters/Chiken/idlestate.gd" id="3_p53ii"]
 [ext_resource type="Script" uid="uid://ct0gwu58464ow" path="res://scenes/Characters/Chiken/walk_state.gd" id="3_y4rpw"]
@@ -65,7 +64,6 @@ animations = [{
 radius = 8.0
 
 [node name="Chiken" type="CharacterBody2D" unique_id=929274418]
-script = ExtResource("1_p53ii")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1545347109]
 position = Vector2(2.1175824e-22, -4.0000005)
@@ -78,20 +76,12 @@ autoplay = "idle"
 position = Vector2(-2, -2)
 shape = SubResource("CircleShape2D_p3bpn")
 
-[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1092657465]
-debug_enabled = true
-
-[node name="statemachine" type="Node" parent="." unique_id=1621531618 node_paths=PackedStringArray("initial_node_state")]
+[node name="statemachine" type="Node" parent="." unique_id=1621531618]
 script = ExtResource("2_y4rpw")
-initial_node_state = NodePath("walk")
 
-[node name="walk" type="Node" parent="statemachine" unique_id=2068741051 node_paths=PackedStringArray("character", "animation_sprite_2d", "navigation_agent_2D")]
+[node name="walk" type="Node" parent="statemachine" unique_id=2068741051]
 script = ExtResource("3_y4rpw")
-character = NodePath("../..")
-animation_sprite_2d = NodePath("../../AnimatedSprite2D")
-navigation_agent_2D = NodePath("../../NavigationAgent2D")
 
-[node name="idle" type="Node" parent="statemachine" unique_id=569253558 node_paths=PackedStringArray("character", "animation_sprite_2d")]
+[node name="idle" type="Node" parent="." unique_id=569253558]
 script = ExtResource("3_p53ii")
-character = NodePath("../..")
-animation_sprite_2d = NodePath("../../AnimatedSprite2D")
+idle_state_timer = null

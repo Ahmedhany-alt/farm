@@ -11,6 +11,3 @@ void vertex() {
 		}
 		
 		VERTEX.xy += shake;
-	
-	
-	}

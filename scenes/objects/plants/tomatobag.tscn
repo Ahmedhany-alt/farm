@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://chsf77n3qtfbo"]
+
+[ext_resource type="Texture2D" uid="uid://e72eoeadatbn" path="res://assets/game/Objects/Basic Plants.png" id="1_f687e"]
+[ext_resource type="Script" uid="uid://b6nff75l3l6y7" path="res://scenes/Components/collectable_component.gd" id="2_72t5s"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p3bpn"]
+radius = 5.0526314
+height = 11.789474
+
+[node name="tomatobag" type="Sprite2D" unique_id=1673225999]
+position = Vector2(0.49999994, 0.49999976)
+scale = Vector2(1.1875, 1.1875)
+texture = ExtResource("1_f687e")
+hframes = 6
+vframes = 2
+frame = 6
+
+[node name="CollectableComponent" type="Area2D" parent="." unique_id=1750264716]
+script = ExtResource("2_72t5s")
+collectable_name = "tomatobag"
+metadata/_custom_type_script = "uid://b6nff75l3l6y7"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=55925109]
+position = Vector2(-0.42105252, -0.42105243)
+shape = SubResource("CapsuleShape2D_p3bpn")

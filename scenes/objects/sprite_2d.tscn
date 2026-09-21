@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://n07oqu66bce"]
+
+[ext_resource type="Script" uid="uid://b6nff75l3l6y7" path="res://scenes/Components/collectable_component.gd" id="1_tbvws"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=1243374416]
+
+[node name="CollectableComponent" type="Area2D" parent="." unique_id=873106356]
+script = ExtResource("1_tbvws")
+metadata/_custom_type_script = "uid://b6nff75l3l6y7"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2107792629]

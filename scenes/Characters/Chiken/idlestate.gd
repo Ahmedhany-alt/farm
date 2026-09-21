@@ -1,19 +1,22 @@
 extends Node
 
-signal transition
 @export var character: CharacterBody2D
 @export var animation_sprite_2d:AnimatedSprite2D
-@export var idle_state_time_interval: float=5.0
+@export var idle_state_timer: float=5.0
 
-
-@onready var idle_state_timer: Timer = Timer.new()
+@onready var idle_state_timeer: Timer.new
 
 var idle_state_timeout: bool = false
 
 func _ready() -> void:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 	idle_state_timer.wait_time = idle_state_time_interval
 	idle_state_timer.timeout.connect(on_idle_state_timeout)
+=======
+	
+	idle_state_timer.wait_time=idle_state_time_intervalidle_state_timer.timeout.connect(on_idle_state_timeout)
+>>>>>>> ff34e80c04d513ee0f1f0e4ef04ad1c9c94ca0f9
 	add_child(idle_state_timer) 
 
 =======
@@ -35,11 +38,11 @@ func _on_next_transitions() -> void:
 		transition.emit("walk")
 
 func _on_enter() -> void:
-	animation_sprite_2d.play("idle")
-	
+	animation_sprite_2d.play("walk")
+
+
 	idle_state_timeout = false
 	idle_state_timer.start()
-	
 func _on_exit() -> void:
 	animation_sprite_2d.stop()
 	idle_state_timer.stop()
