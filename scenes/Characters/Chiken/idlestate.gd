@@ -11,10 +11,16 @@ signal transition
 var idle_state_timeout: bool = false
 
 func _ready() -> void:
+<<<<<<< Updated upstream
 	idle_state_timer.wait_time = idle_state_time_interval
 	idle_state_timer.timeout.connect(on_idle_state_timeout)
 	add_child(idle_state_timer) 
 
+=======
+	idle_state_timer.wait_time=idle_state_time_interval
+	idle_state_timer.timeout.connect(on_idle_state_timeout)
+	add_child(idle_state_timer)
+>>>>>>> Stashed changes
 
 func _on_process(_delta : float) -> void:
 	pass
