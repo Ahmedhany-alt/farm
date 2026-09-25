@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://epymrkd24ke1"]
+
+[ext_resource type="Texture2D" uid="uid://dn4eufddxquj0" path="res://assets/game/Objects/Simple Milk and grass item.png" id="1_hncr8"]
+[ext_resource type="Script" uid="uid://b6nff75l3l6y7" path="res://scenes/Components/collectable_component.gd" id="2_eqwty"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ehnj6"]
+radius = 5.333333
+height = 14.666667
+
+[node name="just a cup" type="Sprite2D" unique_id=341207048]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(-1.000001, -4.0000014)
+scale = Vector2(0.74999994, 1.4999999)
+texture = ExtResource("1_hncr8")
+hframes = 4
+
+[node name="CollectableComponent" type="Area2D" parent="." unique_id=1343981187]
+script = ExtResource("2_eqwty")
+collectable_name = "just a cup"
+metadata/_custom_type_script = "uid://b6nff75l3l6y7"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1307196304]
+position = Vector2(3.8146973e-06, 0.66666764)
+shape = SubResource("CapsuleShape2D_ehnj6")

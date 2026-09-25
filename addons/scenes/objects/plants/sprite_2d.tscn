@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://d1j3ujuuqq3bl"]
+
+[ext_resource type="Texture2D" uid="uid://e72eoeadatbn" path="res://assets/game/Objects/Basic Plants.png" id="1_1ja4l"]
+[ext_resource type="Script" uid="uid://b6nff75l3l6y7" path="res://scenes/Components/collectable_component.gd" id="2_ntjmw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p3bpn"]
+radius = 6.0827627
+
+[node name="Sabaar" type="Sprite2D" unique_id=2012023806]
+show_behind_parent = true
+top_level = true
+y_sort_enabled = true
+texture = ExtResource("1_1ja4l")
+hframes = 6
+vframes = 2
+frame = 2
+
+[node name="CollectableComponent" type="Area2D" parent="." unique_id=294808419]
+script = ExtResource("2_ntjmw")
+collectable_name = "sabar"
+metadata/_custom_type_script = "uid://b6nff75l3l6y7"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent" unique_id=789943483]
+y_sort_enabled = true
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_p3bpn")
