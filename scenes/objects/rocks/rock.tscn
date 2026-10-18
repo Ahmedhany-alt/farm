@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://d24hdoi62dahj" path="res://assets/game/Objects/Basic Grass Biom things 1.png" id="1_f5itc"]
 [ext_resource type="Script" uid="uid://ydgt8uxtse58" path="res://scenes/objects/rocks/rock.gd" id="2_bntui"]
-[ext_resource type="PackedScene" uid="uid://duor33tnbynmb" path="res://scenes/Components/hurtcomponent.tscn" id="3_8i8v8"]
+[ext_resource type="PackedScene" uid="uid://duor33tnbynmb" path="res://scenes/Components/hurt_component.tscn" id="3_8i8v8"]
 [ext_resource type="PackedScene" uid="uid://bqfrxlgr22kva" path="res://scenes/Components/damage_component.tscn" id="4_wj66e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eambw"]

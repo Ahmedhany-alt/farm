@@ -1,6 +1,5 @@
 class_name DataTypes
 
-
 enum Tools {
 	None,
 	AxeWood,
@@ -9,3 +8,12 @@ enum Tools {
 	PlantCorn,
 	PlantTomato,
 }
+
+enum GrowthStates {
+	seed,
+	Germination,
+	Vegitative,
+	Reproduction,
+	Maturity,
+	Harvesting
+	}

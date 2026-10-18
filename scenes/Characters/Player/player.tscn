@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://wk3mmrl5l2iv" path="res://scenes/Characters/Player/chopping_state.gd" id="7_qjpqm"]
 [ext_resource type="Script" uid="uid://vtukjd54w52u" path="res://scenes/Characters/Player/tilling_state.gd" id="8_jxdki"]
 [ext_resource type="Script" uid="uid://d0xumbmufu05a" path="res://scenes/Characters/Player/watering_state.gd" id="9_b5mud"]
-[ext_resource type="PackedScene" uid="uid://eml51xj2sgwt" path="res://scenes/Components/hitcomponent.tscn" id="10_b5mud"]
+[ext_resource type="PackedScene" uid="uid://eml51xj2sgwt" path="res://scenes/Components/hit_component.tscn" id="10_b5mud"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rb0s0"]
 atlas = ExtResource("1_txux2")
@@ -404,7 +404,6 @@ radius = 3.0
 y_sort_enabled = true
 collision_layer = 2
 script = ExtResource("1_isq0l")
-current_tool = 1
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=42405195]
 sprite_frames = SubResource("SpriteFrames_6nv6n")
@@ -441,14 +440,15 @@ script = ExtResource("8_jxdki")
 player = NodePath("../..")
 animated_sprite_2D = NodePath("../../AnimatedSprite2D")
 
-[node name="watering" type="Node" parent="statemachine" unique_id=1235559984 node_paths=PackedStringArray("player", "animated_sprite_2D")]
+[node name="watering" type="Node" parent="statemachine" unique_id=1235559984 node_paths=PackedStringArray("player", "animated_sprite_2D", "hit_component_collision_shape")]
 script = ExtResource("9_b5mud")
 player = NodePath("../..")
 animated_sprite_2D = NodePath("../../AnimatedSprite2D")
+hit_component_collision_shape = NodePath("../../Hitcomponent/HitComponentCollisionShape2D")
 
 [node name="Hitcomponent" parent="." unique_id=2023951365 instance=ExtResource("10_b5mud")]
+current_tool = 0
 
 [node name="HitComponentCollisionShape2D" type="CollisionShape2D" parent="Hitcomponent" unique_id=27396922]
-position = Vector2(0, 6)
 shape = SubResource("CircleShape2D_cpdn7")
 debug_color = Color(0.9583873, 0, 0.5300621, 0.41960785)

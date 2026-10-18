@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://du2uhs82o8bgj"]
 
 [ext_resource type="Texture2D" uid="uid://e72eoeadatbn" path="res://assets/game/Objects/Basic Plants.png" id="1_6y3kd"]
-[ext_resource type="PackedScene" uid="uid://duor33tnbynmb" path="res://scenes/Components/hurtcomponent.tscn" id="2_60dkp"]
+[ext_resource type="PackedScene" uid="uid://duor33tnbynmb" path="res://scenes/Components/hurt_component.tscn" id="2_60dkp"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p3bpn"]
 radius = 7.0

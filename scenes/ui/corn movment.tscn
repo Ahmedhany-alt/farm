@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b2u68pt1uitrl"]
 
 [ext_resource type="Texture2D" uid="uid://e72eoeadatbn" path="res://assets/game/Objects/Basic Plants.png" id="1_bj8je"]
-[ext_resource type="PackedScene" uid="uid://duor33tnbynmb" path="res://scenes/Components/hurtcomponent.tscn" id="2_qrigj"]
+[ext_resource type="PackedScene" uid="uid://duor33tnbynmb" path="res://scenes/Components/hurt_component.tscn" id="2_qrigj"]
 [ext_resource type="PackedScene" uid="uid://btt0u1fuyl51r" path="res://scenes/objects/wateringparticules.tscn" id="3_qrigj"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p3bpn"]

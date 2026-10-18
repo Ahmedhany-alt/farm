@@ -38,10 +38,8 @@ func _on_enter() -> void:
 	else:
 		animated_sprite_2D.play("chopping_front")
 		hit_component_collision_shape.position = Vector2(0,3)
-
 	hit_component_collision_shape.disabled = false
 
 func _on_exit() -> void:
-	animated_sprite_2D.stop()
-
+	animated_sprite_2D.stop() 
 	hit_component_collision_shape.disabled = true
