@@ -1,6 +1,0 @@
-[gd_resource type="FontVariation" format=3 uid="uid://b1ubfxh5pwlq1"]
-
-[ext_resource type="FontFile" uid="uid://bglgf3o4dihai" path="res://assets/ui/fonts/ZX Palm.ttf" id="1_o0feg"]
-
-[resource]
-base_font = ExtResource("1_o0feg")
