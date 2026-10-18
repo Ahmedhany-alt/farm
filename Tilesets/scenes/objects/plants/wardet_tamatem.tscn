@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://rxr8obdic4qo"]
+
+[ext_resource type="Texture2D" uid="uid://e72eoeadatbn" path="res://assets/game/Objects/Basic Plants.png" id="1_0upm3"]
+[ext_resource type="Script" uid="uid://b6nff75l3l6y7" path="res://scenes/Components/collectable_component.gd" id="2_rjota"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p3bpn"]
+radius = 6.1538463
+height = 12.799999
+
+[node name="wardet tamatem" type="Sprite2D" unique_id=1212089723]
+position = Vector2(-1.1920929e-07, 2)
+scale = Vector2(0.8125, 1.875)
+texture = ExtResource("1_0upm3")
+hframes = 6
+vframes = 2
+frame = 9
+
+[node name="CollectableComponent" type="Area2D" parent="." unique_id=1760061998]
+script = ExtResource("2_rjota")
+collectable_name = "wardet tamatem"
+metadata/_custom_type_script = "uid://b6nff75l3l6y7"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent" unique_id=1136732123]
+position = Vector2(1.4671913e-07, 2.1333334)
+shape = SubResource("CapsuleShape2D_p3bpn")

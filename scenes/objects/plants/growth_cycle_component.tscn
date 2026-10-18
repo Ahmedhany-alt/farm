@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b0kqprmvgk886"]
+
+[ext_resource type="Script" uid="uid://d0q48ae57va4e" path="res://scenes/objects/plants/growth_cycle_component.gd" id="1_11idp"]
+
+[node name="GrowthCycleComponent" type="Node" unique_id=826886410]
+script = ExtResource("1_11idp")
+current_growth_state = null
+days_until_harvest = null

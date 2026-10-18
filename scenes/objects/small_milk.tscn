@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://du32puow7cuqo"]
+
+[ext_resource type="Texture2D" uid="uid://dn4eufddxquj0" path="res://assets/game/Objects/Simple Milk and grass item.png" id="1_le7w1"]
+[ext_resource type="Script" uid="uid://b6nff75l3l6y7" path="res://scenes/Components/collectable_component.gd" id="2_hhlbc"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p3bpn"]
+radius = 4.521739
+height = 16.0
+
+[node name="small milk" type="Sprite2D" unique_id=749862407]
+position = Vector2(9.536743e-07, -5.9604645e-08)
+scale = Vector2(0.96875, 0.84375006)
+texture = ExtResource("1_le7w1")
+hframes = 4
+frame = 2
+
+[node name="CollectableComponent" type="Area2D" parent="." unique_id=2096437419]
+script = ExtResource("2_hhlbc")
+metadata/_custom_type_script = "uid://b6nff75l3l6y7"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1438187519]
+y_sort_enabled = true
+position = Vector2(0, 9.536743e-07)
+shape = SubResource("CapsuleShape2D_p3bpn")

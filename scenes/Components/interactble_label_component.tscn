@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cjp0sr66607wj"]
+
+[ext_resource type="Texture2D" uid="uid://dgy2cpc6reqck" path="res://assets/ui/basic ui sprite.png" id="1_klhty"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3bpn"]
+atlas = ExtResource("1_klhty")
+region = Rect2(375, 104, 18, 17)
+
+[sub_resource type="FontVariation" id="FontVariation_p3bpn"]
+
+[node name="interactbleLabelComponent" type="Control" unique_id=654040719]
+z_index = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=265859694]
+layout_mode = 1
+offset_right = 18.0
+offset_bottom = 18.0
+texture = SubResource("AtlasTexture_p3bpn")
+
+[node name="Label" type="Label" parent="." unique_id=1981167996]
+layout_mode = 0
+offset_top = 3.0
+offset_right = 18.0
+offset_bottom = 30.0
+theme_override_fonts/font = SubResource("FontVariation_p3bpn")
+theme_override_font_sizes/font_size = 8
+text = "E
+"
+horizontal_alignment = 1

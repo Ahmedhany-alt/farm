@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bs8raxakylc6l"]
+
+[ext_resource type="Theme" uid="uid://ccqvrewrr4flp" path="res://scenes/ui/game.ui..tres" id="1_g1qom"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cudsk"]
+
+[node name="toolspanel" type="PanelContainer" unique_id=1994172853]
+offset_right = 27.0
+offset_bottom = 26.0
+theme = ExtResource("1_g1qom")
+theme_type_variation = &"darkwoodpanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=764119867]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=806604142]
+layout_mode = 2
+
+[node name="toolaxe" type="Button" parent="MarginContainer/HBoxContainer" unique_id=1261669777]
+custom_minimum_size = Vector2(26, 26)
+layout_mode = 2
+theme_type_variation = &"Toolbutton"
+icon = SubResource("AtlasTexture_cudsk")

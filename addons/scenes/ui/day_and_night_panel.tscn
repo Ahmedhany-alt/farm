@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cmcg31apn100v"]
+
+[ext_resource type="Theme" uid="uid://ccqvrewrr4flp" path="res://scenes/ui/game.ui..tres" id="1_fnqby"]
+
+[node name="Day and night panel" type="Control" unique_id=818632485]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_fnqby")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1607866936]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_type_variation = &"DayandNight"

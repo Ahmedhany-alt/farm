@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dkdcpj2jbc4a"]
+
+[ext_resource type="Texture2D" uid="uid://dgy2cpc6reqck" path="res://assets/ui/basic ui sprite.png" id="1_g30rm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e074n"]
+texture = ExtResource("1_g30rm")
+region_rect = Rect2(14, 155, 20, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uun4f"]
+texture = ExtResource("1_g30rm")
+region_rect = Rect2(14, 155, 20, 26)
+
+[sub_resource type="Theme" id="Theme_5gges"]
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_left = 10
+MarginContainer/constants/margin_right = 10
+MarginContainer/constants/margin_top = 10
+toolbuttom/base_type = &"Button"
+toolbuttom/styles/hover = SubResource("StyleBoxTexture_e074n")
+toolbuttom/styles/normal = SubResource("StyleBoxTexture_uun4f")
+
+[node name="tools panel" type="PanelContainer" unique_id=1233738807]
+offset_right = 8.0
+offset_bottom = 8.0
+theme = SubResource("Theme_5gges")
+theme_type_variation = &"toolbutton"
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1022162244]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=507673875]
+layout_mode = 2
+
+[node name="toolAxe" type="Button" parent="MarginContainer/HBoxContainer" unique_id=463563259]
+custom_maximum_size = Vector2(26, 26)
+layout_mode = 2
