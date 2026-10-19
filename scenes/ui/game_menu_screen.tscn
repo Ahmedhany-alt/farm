@@ -1,8 +1,16 @@
 [gd_scene format=3 uid="uid://cepff373sqpbv"]
 
 [ext_resource type="Theme" uid="uid://ccqvrewrr4flp" path="res://scenes/ui/game.ui..tres" id="1_5slcd"]
+[ext_resource type="PackedScene" uid="uid://ja687rbc5me2" path="res://scenes/ui/Game_menu_Screen_background.tscn" id="1_arotu"]
+[ext_resource type="Script" uid="uid://ytihmbae5po8" path="res://scenes/ui/game_menu_screen.gd" id="1_l5nq4"]
+[ext_resource type="PackedScene" uid="uid://c6wt3b7fwjcn1" path="res://scenes/Components/mouse_cruser_component.tscn" id="2_jk4o3"]
 
 [node name="GameMenuScreen" type="CanvasLayer" unique_id=1544219990]
+script = ExtResource("1_l5nq4")
+
+[node name="MouseCruserComponent" parent="." unique_id=1183700429 instance=ExtResource("2_jk4o3")]
+
+[node name="GameMenuScreenbackground" parent="." unique_id=1098721936 instance=ExtResource("1_arotu")]
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=338114917]
 anchors_preset = 15
@@ -19,6 +27,10 @@ size_flags_vertical = 8
 
 [node name="Label" type="Label" parent="MarginContainer/MarginContainer" unique_id=35182540]
 layout_mode = 2
+theme_override_colors/font_color = Color(15.25233, 9.207041, 0.0007745478, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 0)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
 theme_override_font_sizes/font_size = 54
 text = "CROPTAILS"
 
@@ -47,3 +59,7 @@ layout_mode = 2
 theme_type_variation = &"GameMenuButtom"
 text = "EXIT
 "
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/StartGamebutton" to="." method="_on_start_gamebutton_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/SaveGameButtom" to="." method="_on_save_game_buttom_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ExitgameButton" to="." method="_on_exitgame_button_pressed"]

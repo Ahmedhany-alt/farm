@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Farm"
-run/main_scene="uid://b2tt68pnt2jjy"
+run/main_scene="uid://duffv1cpdv0x3"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -21,6 +21,8 @@ Toolmanager="*uid://cn06fqrodo17"
 Inventory_manager="*uid://ck6pcvrswj4v2"
 DayAndKnightCyclemanager="*uid://dx7u5agfmyrdi"
 SaveGameManager="*uid://ccv4odstjheut"
+GameManager="*uid://c3o6e54r4o6po"
+SceneManager="*uid://ct6q72siojn41"
 
 [display]
 
@@ -32,12 +34,17 @@ window/stretch/mode="viewport"
 window/stretch/aspect="keep_height"
 window/stretch/scale_mode="integer"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+
 [file_customization]
 
 folder_colors={
 "res://Tilesets/": "yellow",
 "res://assets/": "orange",
 "res://dialoge/": "teal",
+"res://dialouge/": "teal",
 "res://resources/": "purple",
 "res://scenes/": "green",
 "res://scripts/": "pink"
@@ -91,6 +98,11 @@ save_game={
 remove_dirt={
 "deadzone": 0.2,
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":true,"meta_pressed":false,"button_mask":1,"position":Vector2(424, 15),"global_position":Vector2(436, 75),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
+]
+}
+game_menu={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
 

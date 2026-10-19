@@ -79,8 +79,16 @@ shape = SubResource("CircleShape2D_p3bpn")
 [node name="statemachine" type="Node" parent="." unique_id=1621531618]
 script = ExtResource("2_y4rpw")
 
-[node name="walk" type="Node" parent="statemachine" unique_id=2068741051]
-script = ExtResource("3_y4rpw")
-
-[node name="idle" type="Node" parent="." unique_id=569253558]
+[node name="idle" type="Node" parent="statemachine" unique_id=569253558 node_paths=PackedStringArray("character", "animated_sprite_2d")]
 script = ExtResource("3_p53ii")
+character = NodePath("../..")
+animated_sprite_2d = NodePath("../../AnimatedSprite2D")
+
+[node name="walk" type="Node" parent="statemachine" unique_id=2068741051 node_paths=PackedStringArray("animated_sprite_2d", "navigation_agent_2d")]
+script = ExtResource("3_y4rpw")
+animated_sprite_2d = NodePath("../../AnimatedSprite2D")
+navigation_agent_2d = NodePath("../../NavigationAgent2D")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=627801730]
+navigation_layers = 2
+avoidance_enabled = true

@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://ja687rbc5me2"]
 
+[ext_resource type="Script" uid="uid://cbc8tgs68g51m" path="res://scenes/ui/game_menu_screen_background.gd" id="1_0pat7"]
 [ext_resource type="TileSet" uid="uid://bhd3s406mopsb" path="res://Tilesets/game_tile_set.tres" id="1_24pq7"]
 [ext_resource type="PackedScene" uid="uid://bu5gggsfvtvx7" path="res://scenes/Houses/large_house.tscn" id="2_oha7c"]
 [ext_resource type="PackedScene" uid="uid://3w3ilxnqiqmv" path="res://scenes/Characters/Player/player.tscn" id="2_p84dq"]
@@ -7,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://d1agce0mfsbvt" path="res://scenes/Characters/guide/guide.tscn" id="4_cgrc0"]
 
 [node name="GameMenuScreenbackground" type="Node2D" unique_id=1098721936]
+script = ExtResource("1_0pat7")
 
 [node name="GameTilemap" type="Node2D" parent="." unique_id=1178145112]
 

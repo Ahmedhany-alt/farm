@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c6wt3b7fwjcn1"]
+
+[ext_resource type="Script" uid="uid://bs6gawmon4ud8" path="res://scenes/Components/mouse_cruser_component.gd" id="1_bplgn"]
+[ext_resource type="Texture2D" uid="uid://dur08ew1x2xv7" path="res://assets/ui/mouse.png" id="2_x68jm"]
+
+[node name="MouseCruserComponent" type="Node" unique_id=1183700429]
+script = ExtResource("1_bplgn")
+curser_component_texture = ExtResource("2_x68jm")

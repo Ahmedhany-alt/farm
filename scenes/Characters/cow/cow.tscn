@@ -75,8 +75,12 @@ avoidance_enabled = true
 
 [node name="Statemachine" type="Node" parent="." unique_id=489091108]
 
-[node name="idle" type="Node" parent="Statemachine" unique_id=1400370370]
+[node name="idle" type="Node" parent="Statemachine" unique_id=1400370370 node_paths=PackedStringArray("character", "animated_sprite_2d")]
 script = ExtResource("2_4e7av")
+character = NodePath("../..")
+animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 
-[node name="walk" type="Node" parent="Statemachine" unique_id=829386112]
+[node name="walk" type="Node" parent="Statemachine" unique_id=829386112 node_paths=PackedStringArray("animated_sprite_2d", "navigation_agent_2d")]
 script = ExtResource("3_417c2")
+animated_sprite_2d = NodePath("../../AnimatedSprite2D")
+navigation_agent_2d = NodePath("../../NavigationAgent2D")
