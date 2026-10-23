@@ -7,4 +7,4 @@ The game also features a day and night cycle, where the map gets darker at night
 
 Wheat and tomatoes are planned as crops, while eggs and milk are planned as animal products, but planting and collecting these items are not implemented yet. Chickens and cows are currently stationary.
 
-Note: The game runs correctly in Godot, but the itch.io version has some issues that we are currently working to fix.
+
