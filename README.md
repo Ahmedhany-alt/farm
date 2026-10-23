@@ -1,10 +1,29 @@
-Note: after we add some modifications to the game, The game runs correctly in Godot, but  the itch.io version has some issues that we are currently working to fix, maybe it is fixed now. 
-A farming game with a map made of grass and water, featuring houses of different sizes (small, medium, and large), chickens, and cows. Players can explore the map, chop trees using an axe in 3 hits, and break rocks in 5 hits. Collected resources, such as logs and stones, are displayed in the collectables panel on the left side of the screen.
+# Farming Game – README
 
-The tools panel is located at the bottom of the screen. Select a tool with the left mouse button and cancel the selection with the right mouse button. Move around using WASD or the arrow keys.
+## Note
 
-The game also features a day and night cycle, where the map gets darker at night and brightens again in the morning. There are three game speeds available, including the normal speed and two faster options.
+The game works correctly in Godot, but the itch.io version currently has some issues. We are working to fix them as soon as possible.
 
-Wheat and tomatoes are planned as crops, while eggs and milk are planned as animal products, but planting and collecting these items are not implemented yet. Chickens and cows are currently stationary.
+## Game Overview
 
+This is a farming game where you can explore a map made of grass and water, collect resources, and interact with different objects around the map. There are also houses in three sizes: small, medium, and large.
 
+## Controls
+
+You can move using WASD or the arrow keys. The tools panel is at the bottom of the screen. You can select a tool using the left mouse button and cancel the selection using the right mouse button.
+
+## Tools and Resources
+
+You can use the axe to chop trees in 3 hits and break rocks in 5 hits. When you break trees or rocks, you can collect logs and stones. The collected resources appear in the collectables panel on the left side of the screen.
+
+## Animals
+
+There are chickens and cows on the map, but they cannot move yet. Eggs and milk are planned as collectable items that should become available one day after feeding the chickens and cows, but this feature has not been implemented yet.
+
+## Crops
+
+Wheat and tomatoes are planned as crops that you can plant and collect, but the planting system is not implemented yet.
+
+## Day and Night Cycle
+
+The game has a day and night cycle. When nighttime starts, the map gradually gets darker until morning comes and the map becomes bright again. You can also change the game speed, with two faster speeds available in addition to the normal speed.
