@@ -1,32 +1,9 @@
-# farm
+A farming game with a map made of grass and water, featuring houses of different sizes (small, medium, and large), chickens, and cows. Players can explore the map, chop trees using an axe in 3 hits, and break rocks in 5 hits. Collected resources, such as logs and stones, are displayed in the collectables panel on the left side of the screen.
 
-Game
+The tools panel is located at the bottom of the screen. Select a tool with the left mouse button and cancel the selection with the right mouse button. Move around using WASD or the arrow keys.
 
-This game is still a demo and is currently under development. More features, tools, and content will be added later.
+The game also features a day and night cycle, where the map gets darker at night and brightens again in the morning. There are three game speeds available, including the normal speed and two faster options.
 
-Controls
+Wheat and tomatoes are planned as crops, while eggs and milk are planned as animal products, but planting and collecting these items are not implemented yet. Chickens and cows are currently stationary.
 
- Arrow Keys or WASD to move.
- Click on a tool from the bar at the bottom to select it.
- Left Click to use the selected tool.
-*Right Click to cancel the selected tool.
-
-Tools
-
-The game has different tools that can be selected from the tool bar.
-The Axe can be used to break trees and rocks.
-
-Trees give Logs.
-Rocks give Stones.
-
-More tools and uses will be added in future updates.
-
-Inventory
-
-Collected resources are automatically picked up when the player gets close to them.
-
-The collected items are added to the inventory on the left side of the screen.
-
-Demo
-
-This is an early demo, so some parts of the game are not finished yet. More features, mechanics, tools, and content will be added as development continues.
+The game runs correctly in Godot, but the itch.io version has some issues that we are currently working to fix.
