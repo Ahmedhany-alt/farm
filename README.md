@@ -2,7 +2,15 @@
 
 ## Note
 
-The game works correctly in Godot, but the itch.io version currently has some issues. We are working to fix them as soon as possible.
+In Week 2, we submitted another game alongside this farming game. We contacted the organizers to clarify the situation, and they informed us that both games would be reviewed separately this time.
+
+**Other Game README:** https://github.com/mohamedayman1411/super_kiko/blob/main/README.md
+
+**Other Game GitHub:** https://github.com/mohamedayman1411/super_kiko
+
+**Other Game Playable URL:** https://ahmedhany3019.itch.io/super-kiko
+
+The farming game is currently not working properly on itch.io, so we will include a gameplay video on our itch.io page showing the game running inside Godot.
 
 ## Game Overview
 
